@@ -6,12 +6,12 @@ public abstract class HumanBehaviour : MonoBehaviour
 {
     
 
-    public virtual void Health(int health)
+    protected virtual void Health(int health)
     {
         Debug.Log("I am " + this + "and my health is "+ health );
     }
 
-
+    protected abstract void DealDamage(int damage);
 
 
 
